@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/views/resto-thumb.fxml</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/FoodThumbController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/TableRowController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/RestaurantProfileController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/SignUpController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/ShoppingCartController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/css/login.css</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/models/Food.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/MenuController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/DashboardController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/RestaurantsController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/TypeFoodController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/views/table-row.fxml</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/FoodAndDrinksController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/LoginController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/DashboardThumbController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/controllers/RestoThumbController.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/views/main.java</file>
+            <file>file:/C:/Users/OLIVIA/Desktop/FOS/src/database/DatabaseManager.java</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="shoppingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="705.0" styleClass="login-block" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ShoppingCartController">
+   <children>
+      <Button layoutX="483.0" layoutY="552.0" mnemonicParsing="false" onAction="#pay" styleClass="button-client" text="Pay" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="69.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </Button>
+      <HBox alignment="CENTER" layoutY="539.0" prefHeight="53.0" prefWidth="415.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="209.0">
+         <children>
+            <Label text="Total:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="totalAmount" text="75$" textFill="#ffd800">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox prefHeight="169.0" prefWidth="624.0" style="-fx-background-color: #ecdbdf;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox prefHeight="71.0" prefWidth="624.0">
+               <children>
+                  <Label styleClass="menu-heading" stylesheets="@../css/foodAndDrinks.css" text="Shopping Cart">
+                     <HBox.margin>
+                        <Insets left="25.0" top="40.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label styleClass="big-heading" stylesheets="@../css/foodAndDrinks.css" text="Shopping Cart" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutY="188.0" prefHeight="340.0" prefWidth="404.0" style="-fx-border-color: #e6e6e6; -fx-border-radius: 20;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="210.0">
+         <children>
+            <HBox prefHeight="46.0" prefWidth="481.0" style="-fx-background-color: #e6e6e6; -fx-border-radius: 20 20 0 0; -fx-background-radius: 20 20 0 0;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="334.0" style="-fx-border-width: 0 0 0 1;">
+                     <children>
+                        <Label text="Meal" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Qty" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Price" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Total" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <ScrollPane prefHeight="293.0" prefWidth="483.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="291.0" prefWidth="479.0">
+                     <children>
+                        <VBox fx:id="tableView" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <VBox fx:id="displayPane" alignment="CENTER" layoutX="505.0" layoutY="188.0" prefHeight="340.0" prefWidth="190.0" style="-fx-border-color: #e6e6e6; -fx-border-radius: 20;" visible="false" AnchorPane.rightAnchor="10.0">
+         <children>
+            <ImageView fx:id="foodImage" fitHeight="113.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/media/images/logo.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="168.0">
+               <children>
+                  <Label fx:id="foodName" text="Food Name">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="34.0" prefWidth="168.0">
+               <children>
+                  <Label fx:id="foodPrice" text="Price">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="168.0">
+               <children>
+                  <Label fx:id="total" text="Total" textFill="#ffd800">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="168.0">
+               <children>
+                  <Label text="Qty">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#decreaseQty" text="-">
+                     <HBox.margin>
+                        <Insets right="2.0" />
+                     </HBox.margin>
+                  </Button>
+                  <TextField fx:id="foodQuantity" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="53.0" />
+                  <Button mnemonicParsing="false" onAction="#increaseQty" prefHeight="25.0" prefWidth="25.0" text="+">
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="168.0" spacing="20.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#removeFood" style="-fx-background-color: #f45656;" text="Remove" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

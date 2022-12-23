@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="705.0" style="-fx-background-color: #fff;" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TypeFoodController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="595.0" prefWidth="700.0" style="-fx-background-color: #fff;">
+         <children>
+            <VBox prefHeight="180.0" prefWidth="705.0" style="-fx-background-color: #ecdbdf;" AnchorPane.bottomAnchor="415.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="97.0" prefWidth="609.0" stylesheets="@../css/foodAndDrinks.css">
+                     <children>
+                        <Button fx:id="backBtn" mnemonicParsing="false" onAction="#goBack" styleClass="button-client">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" styleClass="button-client">
+                                 <image>
+                                    <Image url="@../resources/media/images/arrow-left-solid.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label styleClass="menu-heading" stylesheets="@../css/foodAndDrinks.css" text="Food &amp; Dinks">
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="10.0" fitWidth="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/media/images/angle-right-solid.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label styleClass="menu-heading" stylesheets="@../css/foodAndDrinks.css" text="Burgers">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="searchBar" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="198.0" promptText="search" style="-fx-background-color: #fff;" styleClass="textfield" stylesheets="@../css/foodAndDrinks.css">
+                           <HBox.margin>
+                              <Insets left="270.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </TextField>
+                        <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/media/images/search-button-img.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="705.0">
+                     <children>
+                        <Label fx:id="foodType" alignment="CENTER" styleClass="big-heading" stylesheets="@../css/foodAndDrinks.css" text="Burgers 🍔" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="vboxContainer" layoutX="138.0" layoutY="182.0" prefHeight="413.0" prefWidth="700.0" spacing="20.0" style="-fx-alignment: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="182.0">
+               <padding>
+                  <Insets bottom="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <HBox fx:id="rowContainer" alignment="CENTER_LEFT" prefHeight="159.0" prefWidth="700.0" spacing="40.0" style="-fx-background-color: #fff;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

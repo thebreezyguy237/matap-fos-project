@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="typeFoodPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FoodAndDrinksController">
+   <children>
+      <VBox prefHeight="177.0" prefWidth="624.0" style="-fx-background-color: #ecdbdf;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox prefHeight="71.0" prefWidth="624.0">
+               <children>
+                  <Label styleClass="menu-heading" stylesheets="@../css/foodAndDrinks.css" text="Food &amp; Drinks">
+                     <HBox.margin>
+                        <Insets left="25.0" top="40.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label styleClass="big-heading" stylesheets="@../css/foodAndDrinks.css" text="Meals" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutY="203.0" prefHeight="388.0" prefWidth="624.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="197.0" prefWidth="624.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER" onMouseClicked="#loadAfricanMeals" prefHeight="197.0" prefWidth="228.0" style="-fx-border-color: #faebcd; -fx-border-width: 2; -fx-border-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="94.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../resources/media/images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="African Food" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" onMouseClicked="#loadAmericanMeals" prefHeight="197.0" prefWidth="228.0" style="-fx-border-color: #faebcd; -fx-border-width: 2; -fx-border-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="94.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../resources/media/images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="American Food" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="197.0" prefWidth="624.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER" onMouseClicked="#loadAsianMeals" prefHeight="197.0" prefWidth="228.0" style="-fx-border-color: #faebcd; -fx-border-width: 2; -fx-border-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="94.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../resources/media/images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Asian Food" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" onMouseClicked="#loadDrinks" prefHeight="197.0" prefWidth="228.0" style="-fx-border-color: #faebcd; -fx-border-width: 2; -fx-border-radius: 15;">
+                     <children>
+                        <ImageView fitHeight="94.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../resources/media/images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Drinks" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

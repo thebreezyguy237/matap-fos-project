@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="rowContainer" onMouseClicked="#displayItem" prefHeight="46.0" prefWidth="481.0" style="-fx-background-color: 7; -fx-border-color: #e6e6e6; -fx-border-width: 0 0 1 0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TableRowController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="46.0" prefWidth="334.0" style="-fx-border-width: 0 0 0 1;">
+         <children>
+            <Label fx:id="mealName" text="Meal" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="quantity" text="Qty" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="price" text="Price" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="total" text="Total" />
+         </children>
+      </HBox>
+   </children>
+</HBox>
